@@ -14,21 +14,29 @@
 
 .header {
   text-align: center;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 600;
+  color: #f1f1f1;
 }
 
 .bio {
   text-align: center;
-  color: gray;
-  margin-top: 16px;
+  color: rgb(194, 194, 194);
+  margin-top: 1em;
 }
 
 .waveButton {
   cursor: pointer;
   margin-top: 16px;
-  padding: 8px;
+  padding: 8px 8px;
   border: 0;
-  border-radius: 5px;
-  
+  border-radius: 50px;
+  width: 50%;
+  margin: 2em auto;
+  background: -webkit-linear-gradient(right,#3BF0E4,#73f280);
+  font-weight: 600;
+}
+
+.waveButton:hover {
+  background: -webkit-linear-gradient(right,#73f280,#3BF0E4);
 }

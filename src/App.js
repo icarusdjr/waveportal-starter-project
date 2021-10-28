@@ -17,11 +17,12 @@ export default function App() {
         </div>
 
         <div className="bio">
-        I'm Dan and I'm learning to build smart contracts. Connect your Ethereum wallet and wave at me!
+        I'm Dan and I'm learning to build smart contracts. 
+        <br/>Connect your Ethereum wallet and wave at me!
         </div>
 
         <button className="waveButton" onClick={wave}>
-          Wave at Me
+          WAVE AT ME
         </button>
       </div>
     </div>
