@@ -14,7 +14,7 @@
 
 .header {
   text-align: center;
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 600;
   color: #f1f1f1;
 }
@@ -23,17 +23,19 @@
   text-align: center;
   color: rgb(194, 194, 194);
   margin-top: 1em;
+  font-size: 18px;
 }
 
 .waveButton {
   cursor: pointer;
   margin-top: 16px;
-  padding: 8px 8px;
+  padding: 14px 26px;
   border: 0;
   border-radius: 50px;
-  width: 50%;
+  
   margin: 2em auto;
   background: -webkit-linear-gradient(right,#3BF0E4,#73f280);
+  font-size: 16px;
   font-weight: 600;
 }
 
