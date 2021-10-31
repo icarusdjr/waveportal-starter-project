@@ -23,6 +23,7 @@
   text-align: center;
   color: rgb(194, 194, 194);
   margin-top: 1em;
+  margin-bottom: 1em;
   font-size: 18px;
 }
 
@@ -33,12 +34,13 @@
   border: 0;
   border-radius: 50px;
   
-  margin: 2em auto;
+  margin: .5em auto;
   background: -webkit-linear-gradient(right,#3BF0E4,#73f280);
   font-size: 16px;
   font-weight: 600;
 }
 
 .waveButton:hover {
+  color: #f1f1f1;
   background: -webkit-linear-gradient(right,#73f280,#3BF0E4);
 }
