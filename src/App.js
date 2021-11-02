@@ -138,7 +138,7 @@ const App = () => {
 
         <div className="bio">
         I'm Dan and I'm learning to build smart contracts. 
-        <br/>Connect your Ethereum wallet and wave at me!
+        <br/>Connect your Ethereum wallet, then leave me a message and send a wave!
         </div>
 
         {/* <button className="waveButton" onClick={wave}>
@@ -147,11 +147,10 @@ const App = () => {
 
         {currentAccount &&
         <div className="form">
-              <textarea placeholder="Enter your message here" onChange={e=>setMessage(e.target.value)} />
+              <input placeholder="Enter your message here" onChange={e=>setMessage(e.target.value)} />
               <button className="waveButton" onClick={wave}>WAVE AT ME</button>
         </div>
         }
-        
 
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
@@ -159,9 +158,13 @@ const App = () => {
           </button>
         )}
 
+        <div className="messageTitle">
+        Wave Log ⛓
+        </div>
+
         {allWaves.map((wave, index) => {
           return (
-            <div key={index} style={{ backgroundColor: "OldLace", marginTop: "16px", padding: "8px" }}>
+            <div className="messageBox" key={index}>
               <div>Address: {wave.address}</div>
               <div>Time: {wave.timestamp.toString()}</div>
               <div>Message: {wave.message}</div>
