@@ -133,12 +133,13 @@ const App = () => {
 
       <div className="dataContainer">
         <div className="header">
-        👋 Hey there!
+        Yo 👋 What's up!
         </div>
 
         <div className="bio">
-        I'm Dan and I'm learning to build smart contracts. 
-        <br/>Connect your Ethereum wallet, then leave me a message and send a wave!
+        I'm Dan and I'm learning how to build smart contracts on the Ethereum blockchain. 
+        Connect your Ethereum wallet to the Rinkeby testnet, then leave me a message for a chance to win some (test) ETH! 
+        Tell me your favorite game, movie, song, anime, artist, etc.
         </div>
 
         {/* <button className="waveButton" onClick={wave}>
@@ -148,13 +149,13 @@ const App = () => {
         {currentAccount &&
         <div className="form">
               <input placeholder="Enter your message here" onChange={e=>setMessage(e.target.value)} />
-              <button className="waveButton" onClick={wave}>WAVE AT ME</button>
+              <button className="waveButton" onClick={wave}>Send</button>
         </div>
         }
 
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
-            CONNECT WALLET
+            Connect Ξ Wallet on Rinkeby
           </button>
         )}
 
