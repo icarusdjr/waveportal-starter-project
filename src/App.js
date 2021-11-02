@@ -5,7 +5,7 @@ import abi from "./utils/WavePortal.json";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
-  
+  const [message,setMessage]=useState('');
   const [allWaves, setAllWaves] = useState([]);
   const contractAddress = "0xe55C451057BAdF441Ae5C823e0deb8798864c98D";
   const contractABI = abi.abi
@@ -69,7 +69,7 @@ const App = () => {
         let count = await wavePortalContract.getTotalWaves();
         console.log("Retrieved total wave count...", count.toNumber());
 
-        const waveTxn = await wavePortalContract.wave("this is a message");
+        const waveTxn = await wavePortalContract.wave(message);
         console.log("Mining...", waveTxn.hash);
 
         await waveTxn.wait();
@@ -130,6 +130,7 @@ const App = () => {
   
   return (
     <div className="mainContainer">
+
       <div className="dataContainer">
         <div className="header">
         👋 Hey there!
@@ -140,9 +141,17 @@ const App = () => {
         <br/>Connect your Ethereum wallet and wave at me!
         </div>
 
-        <button className="waveButton" onClick={wave}>
+        {/* <button className="waveButton" onClick={wave}>
           WAVE AT ME
-        </button>
+        </button> */}
+
+        {currentAccount &&
+        <div className="form">
+              <textarea placeholder="Enter your message here" onChange={e=>setMessage(e.target.value)} />
+              <button className="waveButton" onClick={wave}>WAVE AT ME</button>
+        </div>
+        }
+        
 
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
