@@ -7,7 +7,7 @@ const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
   const [message,setMessage]=useState('');
   const [allWaves, setAllWaves] = useState([]);
-  const contractAddress = "0xACEe62b048aB6Cc0de19B9E698E5eD4BA413F184";
+  const contractAddress = "0x9173971689f2a361AF3f5e7840c605d609198D52";
   const contractABI = abi.abi
 
   const checkIfWalletIsConnected = async () => {
