@@ -150,7 +150,7 @@ useEffect(() => {
 
       <div className="dataContainer">
         <div className="header">
-        Yo 👋 What's up!
+        Yo ✌️ What's up!
         </div>
 
         <div className="bio">
